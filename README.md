@@ -6,4 +6,4 @@
 2. Bubble Sort              θ(n^2)
 3. Insertion Sort           θ(n^2)
 
-To open the Visualizer go to https://nitant-suhagiya.github.io/Sorting_Visualizer/Index.html
+To open the Visualizer go to https://nitant-suhagiya.github.io/Sorting_Visualizer/Index.html.
