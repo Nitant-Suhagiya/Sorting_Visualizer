@@ -1,0 +1,84 @@
+.mySlides {
+	display: none;
+}
+
+body {
+	background-color: rgb(255, 235, 211);
+	font-family: Verdana, sans-serif;
+}
+
+.head {
+	margin-top: 20px;
+	margin-right: 20vw;
+	margin-left: 20vw;
+	text-align: center;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	border-radius: 19px;
+	font-weight: bolder;
+}
+
+.data-container {
+	width: 1200px;
+	height: 525px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.bar {
+	width: 3px;
+	position: absolute;
+	left: 0;
+	padding: -20px;
+	bottom: 0;
+	background-color: purple;
+	font-size: 0px;
+	transition: 0.0000001s all ease;
+}
+
+.bar__id {
+	position: absolute;
+	top: -24px;
+	width: 100%;
+	text-align: center;
+}
+
+.btn1 {
+	padding: 14px;
+	font-weight: bolder;
+	background-color: red;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	border: white;
+	margin-left: 25vw;
+	margin-top: 4vw;
+	margin-right: 1vw;
+}
+.btn2 {
+	padding: 15px;
+	font-weight: bolder;
+	background-color: blue;
+	border-radius: 10px;
+	color: white;
+	margin-right: 1vw;
+	font-size: 16px;
+	border: white;
+}
+
+.btn3 {
+	padding: 15px;
+	font-weight: bolder;
+	background-color: red;
+	border-radius: 10px;
+	color: white;
+	margin-right: 1vw;
+	font-size: 16px;
+	border: white;
+}
+
+#ele{
+  text-align: center;
+  height: 35px;
+}
