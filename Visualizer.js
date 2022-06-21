@@ -95,12 +95,14 @@
 			bars[min_idx].style.backgroundColor = " rgb(24, 190, 255)";
 			}
 			min_idx = j;
-		} else {
+		} 
+			else {
 
 			// Provide skyblue color to the jth bar
 			bars[j].style.backgroundColor = " rgb(24, 190, 255)";
 		}
 		}
+		if (min_idx != i) {
 		
 		 //To swap ith and (min_idx)th bar
 		var temp1 = bars[min_idx].style.height;
@@ -109,6 +111,7 @@
 		bars[i].style.height = temp1;
 		bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
 		bars[i].childNodes[0].innerText = temp2;
+		}
 		
 		// To pause the execution of code for 0.0000001 milliseconds
 		await new Promise((resolve) =>
