@@ -199,6 +199,12 @@ for (var i = 1; i < bars.length; i += 1) {
 	// To store the ith bar height to height
 	var height = bars[i].style.height;
 	
+	var barval=document.getElementById("ele")
+  
+    // For dynamically Updating the selected element
+      barval.innerHTML=
+      `<h3>Element Selected is :${key}</h3>`;
+	
 
 	//Provide darkblue color to the ith bar
 	bars[i].style.backgroundColor = "darkblue";
