@@ -183,7 +183,7 @@ async function BubbleSort(delay = 0.0000001) {
 
 
 // Asynchronous function to perform "Insertion Sort"
-async function InsertionSort(delay = 0.0000001) {
+async function InsertionSort(delay = 0.01) {
 let bars = document.querySelectorAll(".bar");
 
 // Provide lightgreen colour to 0th bar
@@ -198,13 +198,6 @@ for (var i = 1; i < bars.length; i += 1) {
 
 	// To store the ith bar height to height
 	var height = bars[i].style.height;
-	
-	var barval=document.getElementById("ele")
-  
-    // For dynamically Updating the selected element
-      barval.innerHTML=
-      `<h3>Element Selected is :${key}</h3>`;
-	
 
 	//Provide darkblue color to the ith bar
 	bars[i].style.backgroundColor = "darkblue";
@@ -213,7 +206,7 @@ for (var i = 1; i < bars.length; i += 1) {
 	await new Promise((resolve) =>
 	setTimeout(() => {
 	resolve();
-	}, 0.0000001)
+	}, 0.01)
 );
 
 	// For placing selected element at its correct position
@@ -234,7 +227,7 @@ for (var i = 1; i < bars.length; i += 1) {
 	await new Promise((resolve) =>
 		setTimeout(() => {
 		resolve();
-		}, 0.0000001)
+		}, 0.01)
 	);
 		
 	// Provide lightgreen color to the sorted part
@@ -251,7 +244,7 @@ for (var i = 1; i < bars.length; i += 1) {
 	await new Promise((resolve) =>
 	setTimeout(() => {
 		resolve();
-	}, 0.0000001)
+	}, 0.01)
 	);
 	
 	// Provide light green color to the ith bar
