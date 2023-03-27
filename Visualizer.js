@@ -183,7 +183,7 @@ async function BubbleSort(delay = 0.0000001) {
 
 
 // Asynchronous function to perform "Insertion Sort"
-async function InsertionSort(delay = 0.01) {
+async function InsertionSort(delay = 0.1) {
 let bars = document.querySelectorAll(".bar");
 
 // Provide lightgreen colour to 0th bar
@@ -198,15 +198,18 @@ for (var i = 1; i < bars.length; i += 1) {
 
 	// To store the ith bar height to height
 	var height = bars[i].style.height;
+	
+	var barval=document.getElementById("ele")
+      barval.innerHTML=`<h3>Element Selected is :${key}</h3>`;
 
 	//Provide darkblue color to the ith bar
 	bars[i].style.backgroundColor = "darkblue";
 	
-	// To pause the execution of code for 0.0000001 milliseconds
+	// To pause the execution of code for 0.1 milliseconds
 	await new Promise((resolve) =>
 	setTimeout(() => {
 	resolve();
-	}, 0.01)
+	}, 0.1)
 );
 
 	// For placing selected element at its correct position
@@ -240,15 +243,16 @@ for (var i = 1; i < bars.length; i += 1) {
 	bars[j + 1].style.height = height;
 	bars[j + 1].childNodes[0].innerHTML = key;
 	
-	// To pause the execution of code for 0.0000001 milliseconds
+	// To pause the execution of code for 0.1 milliseconds
 	await new Promise((resolve) =>
 	setTimeout(() => {
 		resolve();
-	}, 0.01)
+	}, 0.1)
 	);
 	
 	// Provide light green color to the ith bar
 	bars[i].style.backgroundColor = " rgb(49, 226, 13)";
+	barval.innerHTML="<h3>Sorted!!!</h3>";
 	
 	document.getElementById("Button4").disabled = false;
 	document.getElementById("Button4").style.backgroundColor = "#d8b6ff";
